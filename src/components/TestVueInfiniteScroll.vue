@@ -3,13 +3,13 @@
     
     <div class=" col-3" v-for="(item, $index) in list" :key="$index"  >
       <div >
-      <img class="mb-2" :src="item.image" /> <br>
-      <a  href="#">
-      {{item.description}} </a>
-      <br>
-      <div class="d-flex flex-row ml-5"> 
-      <p> Old Price: {{item.price}} </p> <p class="ml-3"> Selling Price: {{item.selling_price}} </p>
-      </div>
+        <img class="mb-2" :src="item.image" /> <br>
+        <a  href="#">
+        {{item.description}} </a>
+        <br>
+        <div class="d-flex flex-row ml-5"> 
+          <p> Old Price: {{item.price}} </p> <p class="ml-3"> Selling Price: {{item.selling_price}} </p>
+        </div>
 
       </div>
   
@@ -27,16 +27,12 @@
 
 import InfiniteLoading from 'vue-infinite-loading';
 import axios from 'axios'
-// import  '@/assets/style.css'
-// const api = 'https://pim.wforwomanonline.com/pim/pimresponse.php/?service=category&store=1&url_key=sale&page=1&count=20&sort_by=&sort_dir=desc&filter=';
 
 
 export default {
   
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
+  name: 'InfiniteScroll',
+  
   components : {
     InfiniteLoading
   },
@@ -56,8 +52,8 @@ export default {
   },
   methods: {
     async getData () {
-       const response = await axios.get(this.url);
-        this.list = response.data.result.products;
+      const response = await axios.get(this.url);
+      this.list = response.data.result.products;
 
     },
     infiniteHandler($state) {
