@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  a {
+      margin: 0px;
+      margin-top: 0px;
+      padding: 5px 10px;
+      text-align: left;
+      padding-bottom: 0;
+      font-size: 14px;
+      color: #000;
+  }
+  p {
+      margin: 0px;
+      margin-top: 0px;
+      padding: 5px 10px;
+      text-align: left;
+      padding-bottom: 0;
+      font-size: 14px;
+      color: #000;
+  }
+  p .old-price {
+      color: #c5c5c5;
+      text-decoration: line-through;
+      padding-right: 5px;
+  }
