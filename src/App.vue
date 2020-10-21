@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    
-    <TestVueInfiniteScroll />
+  <router-view></router-view>
+    <!-- <footer> this is a footer </footer>  -->
   </div>
 </template>
 
 <script>
-import TestVueInfiniteScroll from './components/TestVueInfiniteScroll'
+// import TestVueInfiniteScroll from './components/TestVueInfiniteScroll'
 
 export default {
   name: 'App',
-  components: {
-    TestVueInfiniteScroll
-  }
+  // components: {
+  //   TestVueInfiniteScroll
+  // }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+// @import "@/scss/style.scss";
+
+
 </style>
